@@ -9,3 +9,29 @@ level04 = qi0maab88jeaj46qoumi7maus
 level05 = ne2searoevaevoem4ov4ar8ap
 	echo "getflag > /tmp/flagg" > /opt/openarenaserver/script.sh
 level06 = viuaaale9huek52boumoomioc
+
+level08 = fiumuikeil55xe9cu4dood66h	
+	ln -s /home/user/level08/token /tmp/cpy
+	./level08 /tmp/cpy
+	su flag08
+	password = quif5eloekouj29ke0vouxean
+	getflag
+level09 = 25749xKZ8L7DkSCwJkT9dyv6f
+	
+	#include <stdio.h>
+	int main (int ac, char **av) {
+	int i = 0;
+	while (av[1][i] != '\0') {
+		putchar (av[1][i] - i);
+		i++;
+	}
+	putchar('\n');
+	return 0;
+	}
+
+	cd /tmp
+	gcc rot.c -o rot
+	./rot $(cat ~/token)
+	su flag09
+	password = f3iji1ju5yuevaus41q1afiuq
+	getflag = s5cAJpM8ev6XHw998pRWG728z
