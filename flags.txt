@@ -70,3 +70,15 @@ level09 = 25749xKZ8L7DkSCwJkT9dyv6f
 	su flag09
 	password = f3iji1ju5yuevaus41q1afiuq
 	getflag = s5cAJpM8ev6XHw998pRWG728z
+level10 = 
+	password = woupa2yuojeeaaed06riuj63c
+	getflag = feulo4b72j7edeahuete3no7c
+
+level11 = 
+	getflag = fa6v5ateaw21peobuub8ipe6s
+level12 = 
+	getflag = g1qKMiRpXf53AWhDaU7FEkczr
+level13 = 
+	getflag = 2A31L79asukciNyi8uppkEuSx 
+level14 =
+	password = 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
